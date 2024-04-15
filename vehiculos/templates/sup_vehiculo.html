@@ -1,0 +1,17 @@
+<!-- delete_vehicle.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suprimir Veh&iacute;culo</title>
+</head>
+<body>
+    <h1>Borrar o suprimir Veh&iacute;culo</h1>
+    <p>Est&aacute; seguro que desea borrar "{{ vehicle.name }}"?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Suprimir</button>
+    </form>
+</body>
+</html>
